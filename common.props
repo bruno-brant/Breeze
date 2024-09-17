@@ -1,0 +1,34 @@
+<Project>
+	<PropertyGroup>
+		<!-- Default properties for projects -->
+		<TargetFramework>net8</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<WarningsAsErrors>true</WarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Breeze Alpha</Title>
+		<Description>Breeze is a library to simplify the development of ASP.NET applications using best practices.</Description>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<VersionSuffix>alpha</VersionSuffix>
+		<Company>DreamsForge</Company>
+		<Authors>Breeze Contributors</Authors>
+		<Copyright>Copyright © 2021 DreamsForge. All rights reserved.</Copyright>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Default Packages to be used (analyzers, generally) -->
+		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

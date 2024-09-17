@@ -1,0 +1,33 @@
+﻿[*]
+guidelines = 80, 100, 120
+
+[*.cs]
+
+## General Settings ##
+
+charset = utf-8
+
+## StyleCop Analyzer ##
+
+# SA1005: Single line comments should begin with single space
+dotnet_diagnostic.SA1005.severity = none
+
+# SA1010: Opening square brackets must be spaced correctly - TODO: This is bugging out with the new collection syntax. Should be re-enabled later.
+dotnet_diagnostic.SA1010.severity = none
+
+# SA1101: Prefix local calls with this - to keep code concise, we disable it
+dotnet_diagnostic.SA1101.severity = none
+
+# SA1309: Field names should not begin with underscore - The current style is to prefix private elements with an _
+dotnet_diagnostic.SA1309.severity = none
+
+# SA1512: Single-line comments must not be followed by a blank line - Yes, when commenting out code, so I allow it
+dotnet_diagnostic.SA1512.severity = none
+
+# SA1648: Inheritdoc should be used with inheriting class - TODO: This is bugging out with the new static interface members. Should be re-enabled later.
+dotnet_diagnostic.SA1648.severity = none
+
+## Code Analysis ##
+
+# CA2007: Consider calling ConfigureAwait on the awaited task - disabled since this isn't a GUI project
+dotnet_diagnostic.CA2007.severity = none
